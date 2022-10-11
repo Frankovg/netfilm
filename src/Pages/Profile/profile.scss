@@ -1,0 +1,32 @@
+@import "../../styles/variables";
+
+.subs-row {
+  max-width: 660px;
+  margin: auto;
+  color: white;
+  padding-top: 95px;
+  h6 {
+    background-color: #aaa;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 18px;
+  }
+  .avatar-col {
+    img {
+      width: 100%;
+    }
+  }
+  .signOut-btn {
+    @include redButton;
+    width: 100% !important;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .avatar-col {
+    img {
+      display: none;
+    }
+  }
+}

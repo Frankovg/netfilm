@@ -1,0 +1,47 @@
+@import "../../styles/variables";
+
+.stick {
+  position: fixed !important;
+  z-index: 88;
+  width: 100%;
+}
+.app-navbar {
+  background-color: $darkNetflix !important;
+}
+
+.transparent {
+  background-color: transparent !important;
+}
+
+.nav-container {
+  padding-inline: 5vw;
+  .logo {
+    background-color: transparent !important;
+    border: none !important;
+    img {
+      width: 165px;
+    }
+  }
+
+  .avatar-btn {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0px;
+    img {
+      width: 3rem;
+    }
+  }
+
+  .red-btn {
+    background-color: $redNetflix !important;
+    color: white;
+    font-size: 1rem;
+    border-radius: 3px !important;
+    border: none !important;
+    width: 5rem;
+    height: 2.1rem;
+    text-transform: inherit;
+    display: grid;
+    place-content: center;
+  }
+}

@@ -1,46 +1,73 @@
-# Getting Started with Create React App and Redux
+# Netfilm
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+> Es un clon de Netflix muy básico que se conecta a la base de datos de una API de películas para mostrar por pantalla las listas de las distintas categorías.
+> Video demo in [ YouTube ](https://youtu.be/g6nDENxjK3c).
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [General Info](#general-information)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Setup](#setup)
+- [Contact](#contact)
 
-### `npm start`
+## General Information
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- La App permite crear usuarios a través de la API Firebase y loguearse.
+- Un usuario logueado puede navegar por la lista de películas que se cargan de la API The Movie Data Base.
+- La App es responsive y se adapta perfectamente a los dispositívos móviles.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- Arquitectura básica creada con [ React-Redux ](https://react-redux.js.org/introduction/getting-started).
+- Hojas de estilos con Sass y uso de componentes de [ React Bootstrap ](https://react-bootstrap.github.io/getting-started/introduction/).
+- Creación de rutas con React [ Router Dom ](https://www.npmjs.com/package/react-router-dom).
+- Peticiones a las API's con [ Axios ](https://www.npmjs.com/package/axios).
+- Creación y autenticación de usuarios con [ Firebase ](https://firebase.google.com/).
+- Base de datos de películas de [ The Movie Data Base ](https://www.themoviedb.org).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- Contraseñas encriptadas por Firebase.
+- Full responsive.
+- Las portadas de las películas se acutalizan gracias a TMDB.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1- Instalar todas las dependencias ejecutando 'npm install' desde la terminal (asegurarse de estar dentro de la carpeta 'netfilm').
+<br/>
+2- Crear una cuenta gratuita en [ The Movie Data Base ](https://www.themoviedb.org).
+<br/>
+3- Solicitar la API Key en settings/API y click en 'Create'. Copiar la API Key.
+<br/>
+4- Abrir el archivo 'Request.js' en /src y pegar la API Key de TMDB donde dice '<<< API KEY DE TMDB >>>'. Guardar.
+<br/>
+5- Crear una cuenta gratuita en [ Firebase ](https://firebase.google.com/).
+<br/>
+6- Ir a 'Go to console' situado arriba a la derecha para acceder a las herramientas de developer.
+<br/>
+7- Agregar proyecto y nombrarlo 'netfilm'.
+<br/>
+8- Desactivar 'Habilitar Google Analytics para este proyecto' ya que no lo utilizaremos.
+<br/>
+9- Ir a 'Authentication' y darle a 'Comenzar'.
+<br/>
+10- Seleccionar 'Correo electrónico/contraseña' y habilitar la primera opción. Guardar.
+<br/>
+11- Ir al engranaje de opciones ubicado en la barra izquierda superior e ir a 'Configuración del proyecto'.
+<br/>
+12- Bajar hacia 'Tus apps' y clickear en el ícono </> para agregar un nuevo proyecto.
+<br/>
+13- Poner 'Netfilm' de nombre y dar en 'Registrar app' (no aceptar el hosting).
+<br/>
+14- Cuando termina ir abajo y pinchar en 'Ir a la consola'.
+<br/>
+15- Dentro de la nueva app 'Netfilm' pinchar la opción radio 'Config' y copiar toda la función 'firebaseConfig()'.
+<br/>
+16- Abrir el archivo 'firebase.js' en /src y reemplazar la función 'firebaseConfig()'. Guardar.
+<br/>
+17- Ejecutar el servidor con 'npm start' desde la termianal.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contact
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Created by [Franco Amoroso](https://www.linkedin.com/in/francoamoroso/) - feel free to contact me! Cheers!

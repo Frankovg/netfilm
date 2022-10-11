@@ -1,0 +1,31 @@
+@import "../../styles/variables";
+
+.subs-box {
+  margin-block: 1rem;
+  h5 {
+    font-size: 1.2rem;
+  }
+  .sub-btn {
+    @include redButton;
+    width: 50%;
+  }
+
+  .colorPremium {
+    background-color: grey !important;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 0px !important;
+    border: none !important;
+    padding-block: 15px;
+    padding-inline: 24px;
+    text-transform: inherit;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  button {
+    text-align: left;
+    width: 100% !important;
+  }
+}

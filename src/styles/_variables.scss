@@ -1,0 +1,15 @@
+// Colores principales
+$darkNetflix: #221f1f;
+$redNetflix: #e50914;
+
+// Botones rojos
+@mixin redButton {
+  background-color: $redNetflix !important;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 0px !important;
+  border: none !important;
+  padding-block: 15px;
+  padding-inline: 24px;
+  text-transform: inherit;
+}

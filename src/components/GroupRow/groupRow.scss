@@ -1,0 +1,42 @@
+.genres {
+  color: white;
+  margin-left: 2rem;
+  h4 {
+    font-weight: 500;
+    padding-top: 0.5rem;
+  }
+  .movie-pictures {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+    .poster {
+      max-height: 12rem;
+      object-fit: contain;
+      margin-right: 8px;
+      transition: 450ms;
+    }
+    .poster:hover {
+      transform: scale(1.1);
+    }
+    .poster-lg {
+      max-height: 15rem;
+      object-fit: contain;
+      margin-right: 8px;
+      transition: 450ms;
+    }
+    .poster-lg:hover {
+      transform: scale(1.15);
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .genres {
+    margin-left: 1rem;
+  }
+}
